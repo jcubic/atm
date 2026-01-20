@@ -1,8 +1,16 @@
 {
   "name": "@jcubic/atm",
+  "version": "0.0.1",
+  "description": "ATM is Terminal Multiplexer",
   "module": "src/index.tsx",
   "type": "module",
-  "private": true,
+  "bin": {
+    "atm": "./bin/atm.cjs"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
   "scripts": {
     "start": "bun run src/index.tsx",
     "dev": "bun run --watch src/index.tsx",
@@ -20,6 +28,7 @@
   "dependencies": {
     "@opentui/core": "^0.1.72",
     "@opentui/react": "^0.1.72",
+    "bun": "^1.3.0",
     "figlet": "^1.9.4",
     "react": "^19.2.3"
   }
