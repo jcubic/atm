@@ -1,9 +1,10 @@
 {
-  "name": "repo",
+  "name": "@jcubic/atm",
   "module": "src/index.tsx",
   "type": "module",
   "private": true,
   "scripts": {
+    "start": "bun run src/index.tsx",
     "dev": "bun run --watch src/index.tsx"
   },
   "devDependencies": {
