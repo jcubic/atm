@@ -2,6 +2,8 @@
 
 ATM stands for "ATM is Terminal Multiplexer"
 
+[![Coverage Status](https://coveralls.io/repos/github/jcubic/atm/badge.svg?branch=master)](https://coveralls.io/github/jcubic/atm?branch=master)
+
 ## Installation
 
 ```bash
