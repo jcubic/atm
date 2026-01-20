@@ -1,13 +1,21 @@
-import { createCliRenderer, TextAttributes } from "@opentui/core";
-import { createRoot } from "@opentui/react";
+import { createCliRenderer } from '@opentui/core';
+import { createRoot, useTerminalDimensions } from '@opentui/react';
+import { Figlet } from './lib/figlet';
 
 function App() {
+  const { width, height } = useTerminalDimensions();
+
   return (
-    <box alignItems="center" justifyContent="center" flexGrow={1}>
-      <box justifyContent="center" alignItems="flex-end">
-        <ascii-font font="tiny" text="OpenTUI" />
-        <text attributes={TextAttributes.DIM}>What will you build?</text>
-      </box>
+    <box alignItems="center" justifyContent="center" flexGrow={1} flexDirection="column" gap={1}>
+      {/* Responsive figlet - adjusts to terminal width */}
+      <Figlet text="OpenTUI" font="Standard" responsive fg="#7aa2f7" />
+
+      {/* Fixed width example */}
+      <Figlet text="Figlet" font="Small" fg="#9ece6a" />
+
+      <text>
+        Terminal size: {width}x{height} - Resize to see responsive text adjust
+      </text>
     </box>
   );
 }
