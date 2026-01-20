@@ -18,6 +18,7 @@ coverage/
 
 # Git
 .git/
+.github/
 .gitignore
 
 # Test files
