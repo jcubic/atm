@@ -2,6 +2,32 @@
 
 ATM stands for "ATM is Terminal Multiplexer"
 
+## Installation
+
+```bash
+npm install -g @jcubic/atm
+```
+
+## Usage
+
+```bash
+atm
+```
+
+## Development
+
+Install bun:
+
+```bash
+npm install -g bun
+```
+
+Clone the repository:
+
+```bash
+git clone https://github.com/jcubic/atm.git
+```
+
 To install dependencies:
 
 ```bash
@@ -11,10 +37,8 @@ bun install
 To run:
 
 ```bash
-bun dev
+bun start
 ```
-
-This project was created using `bun create tui`. [create-tui](https://git.new/create-tui) is the easiest way to get started with OpenTUI.
 
 ## License
 
