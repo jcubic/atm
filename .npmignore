@@ -9,6 +9,7 @@ bun.lock
 tsconfig.json
 .prettierrc
 .eslintrc*
+eslint.config.js
 
 # Build/dev artifacts
 node_modules/
