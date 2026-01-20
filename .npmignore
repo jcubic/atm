@@ -22,7 +22,5 @@ coverage/
 .gitignore
 
 # Test files
-__tests__
-*.test.ts
-*.test.tsx
+e2e
 vitest.config.ts
