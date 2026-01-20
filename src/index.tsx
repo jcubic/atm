@@ -12,5 +12,7 @@ function App() {
   );
 }
 
-const renderer = await createCliRenderer();
+const renderer = await createCliRenderer({
+  exitOnCtrlC: true,
+});
 createRoot(renderer).render(<App />);
