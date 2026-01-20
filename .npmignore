@@ -1,0 +1,26 @@
+# Emacs backup/autosave files
+\#*#
+*~
+.\#*
+
+bun.lock
+
+# Config files not needed at runtime
+tsconfig.json
+.prettierrc
+.eslintrc*
+
+# Build/dev artifacts
+node_modules/
+*.log
+coverage/
+
+# Git
+.git/
+.gitignore
+
+# Test files
+__tests__
+*.test.ts
+*.test.tsx
+vitest.config.ts
