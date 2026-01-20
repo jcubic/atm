@@ -7,12 +7,7 @@ function App() {
 
   return (
     <box alignItems="center" justifyContent="center" flexGrow={1} flexDirection="column" gap={1}>
-      {/* Responsive figlet - adjusts to terminal width */}
-      <Figlet text="OpenTUI" font="Standard" responsive fg="#7aa2f7" />
-
-      {/* Fixed width example */}
-      <Figlet text="Figlet" font="Small" fg="#9ece6a" />
-
+      <Figlet text="ATM is Terminal Multiplexer" font="Rectangles" responsive fg="#FFCE00" />
       <text>
         Terminal size: {width}x{height} - Resize to see responsive text adjust
       </text>
